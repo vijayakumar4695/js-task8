@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>js task8 login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+   p{
+      font-size: 15px;
+   }
+.container-fluid {
+   width:500px;
+   margin-top: 80px;
+}
+
+#USERID{
+
+         width:250px;
+         height: 40px;
+         border-radius:10px;
+         text-align:center;
+         font-size: 18px;
+         border-color:black;
+         color:black;
+         
+         
+}
+
+#PASS {
+
+         width:250px;
+         height: 40px;
+         border-radius:10px;
+         text-align:center;
+         font-size: 18px;
+         border-color:black;
+         color:black;
+}
+.container {
+   background: #00998C;
+   color:#4C3380;
+   width:500px;
+   height: 380px;
+}
+#log {
+   text-transform: uppercase;
+   border:2px solid black;
+   border-radius: 10px;
+   border-left-width: 40px;
+   border-right-width: 40px;
+}
+a {
+   color:black;
+}
+
+</style>
+<body>
+    <div class="container-fluid bg-success">
+      <div class="row">
+         <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+
+            <h2 id="log">LOGIN</h2>
+         </div>
+      </div>
+   </div>
+
+   <div class="container">
+            <div class="row">
+         <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+            <br>
+            <br>
+
+   <b>&nbsp &nbsp &nbsp MAIL ID: </b>  <input type="text" id="USERID" name="USERID">
+   <br>
+   <br>
+   <b>PASSWORD :</b> <input type="text" id="PASS" name="PASSWORD">
+   <br>
+   <br>
+   <a href=" ">Alredy have an account?</a>
+   <br>
+   <br>
+   <button type="button"  onclick="myFunction()" class="btn btn-primary">LOGIN</button>
+</div>
+</div>
+
+   <br>
+   <br>
+            <div class="row">
+         <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+
+            <p>(If u have a new user to register below register link to apply)</p>
+         </div>
+      </div>
+            <br>
+            
+            
+            <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+
+          <a href="js task8register.html">  <button type="submit" class="btn btn-success">APPLY</button></a>
+       </div>
+    </div>
+ </div>
+
+
+
+ <script>
+       function myFunction() {
+         var MAILID =document.getElementById("USERID").value;
+      var PASSWORD =document.getElementById("PASS").value;
+      var result=" ";
+
+       var data = {
+         MAILID:MAILID,
+         PASSWORD:PASSWORD,
+       }
+    console.log(MAILID,PASSWORD)
+   if (MAILID.length < 1) 
+   {
+     window.alert("oopps");
+     return false;
+ }
+ if (PASSWORD.length < 1)
+ {
+   window.alert("oopps");
+   return false;
+ }
+ else {
+     alert("login successful")
+ 
+    location.replace("js task8home.html")
+
+}
+    
+}
+ </script>
+
+   </body>
+   </html>

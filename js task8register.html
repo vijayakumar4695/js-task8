@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>js task8 register</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<style> 
+
+#USERID{
+
+   		width:250px;
+   		height: 40px;
+   		border-radius:10px;
+   		text-align:center;
+   		font-size: 18px;
+   		border-color:black; 
+
+}
+
+#PASS {
+
+   		width:250px;
+   		height: 40px;
+   		border-radius:10px;
+   		text-align:center;
+   		font-size: 18px;
+   		border-color:black; 
+
+}
+.container {
+	background: #f14099;
+	width:450px;
+	height: 250px;
+	margin-top: 0px;
+	overflow: y hidden;
+}
+.btn {
+	width:100px;
+	height: 40px;
+}
+.container-fluid {
+	width:650px;
+	margin-top: 80px;
+	height: 400px;
+}
+#h2 {
+	text-transform: uppercase;
+	font-size: 30px;
+	margin-top: 30px;
+	border:2px solid black;
+	border-left-width: 40px;
+	border-right-width: 40px;
+
+}
+#h2:hover {
+	color: red;
+}
+
+
+
+
+
+
+</style>
+
+
+<body>
+
+
+	<div class="container-fluid bg-warning">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 text-center">
+				<p id="h2">REGISTER</p>
+			</div>
+		</div>
+	
+
+	<br>
+	<br>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 text-center">
+				<br>
+				<br>
+
+	<b>&nbsp &nbsp &nbsp MAIL ID:	</b>	<input type="text" id="USERID" name="USERID">
+	<br>
+	<br>
+	<b>PASSWORD :</b>	<input type="text" id="PASS" name="PASSWORD">
+	<br>
+	<br>
+	<br>
+	
+
+	<button type="button"  onclick="myFunction()" class="btn btn-primary">REGISTER</button>
+
+	</div>
+	</div>
+    </div>
+</div>
+
+
+<script>
+	var user=[]
+
+	 function myFunction() {
+	 	var MAILID =document.getElementById("USERID").value;
+	 	var PASSWORD =document.getElementById("PASS").value;
+	 	 var data = {
+	 	 	MAILID:MAILID,
+	 	 	PASSWORD:PASSWORD,
+	 	 }
+
+	 	console.log(user)
+	 
+
+
+   user.push(data)
+   localStorage.setItem('user',JSON.stringify(user));
+   var get=JSON.parse(localStorage.getItem('user'));
+   console.log(get)
+   if (MAILID.length < 1) 
+   {
+     window.alert("oopps");
+     return false;
+ }
+ if (PASSWORD.length < 1)
+ {
+ 	window.alert("oopps");
+ 	return false;
+ }
+ else {
+     alert("login successful")
+ 
+    location.replace("js task8login.html")
+
+}
+
+}
+
+
+
+
+
+
+</script>
+</body>
+</html>
+
+

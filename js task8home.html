@@ -1,0 +1,744 @@
+
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>js task8</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <style>
+  	
+  #list li {
+  		margin-left: 12px;
+  	}
+
+  	#logo {
+  		
+  		margin-left:40px;
+  	}
+  	.social-links a{
+  text-align:center;
+	float: left;
+	width: 100px;
+	height: 100px;
+	border: 2px solid #909090;
+	border-radius: 100%;
+	margin-right: 7px; /*space between*/
+    display: flex;
+    align-items: flex-start;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+} 
+    
+    .social-links a i{
+	font-size: 30px;
+    align-self:center;
+	color: #909090;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    margin: 0 auto;
+    color:white;
+}
+.social-links a i::before{
+  display:inline-block;
+  text-decoration:none;
+}
+.social-links a {
+  background:tomato;
+}
+#text1 {
+	background: lightgrey;
+	height: 60px;
+	font-size: 16px;
+}
+#comment {
+     background: lightgrey;
+     font-size: 16px;
+     height: 200px;
+}
+#btn {
+	width:100px;
+}
+
+  </style>
+
+</head>
+<body>
+	 <div class="container-fluid">
+     	<div class="row">
+	      	
+	      	<div class=" col-lg-3 col-md-12 col-sm-12 mt-2">
+	   	    <img id="logo" src="img/logo.png" class=" d-block" width="100px " height="100px">
+	   	</div>
+	   
+  <div class="col-lg-9 col-md-12 col-sm-12 mb-3">
+  	<nav class="navbar navbar-expand-sm bg-white navbar-dark">
+  <ul id="list" class="navbar-nav"  style="margin-left: 10px;margin-top:30px">
+    <li class="nav-item text-secondary" style="font-size:20px"><a href="bootstrap3.html">Home</a> </li>
+    <li class="nav-item text-secondary" style="font-size:20px"><a href="#">About</a></li>
+    <li class="nav-item text-secondary" style="font-size:20px"><a href="#">Portfolio</a></li>
+     <li class="nav-item text-secondary" style="font-size:20px"><a href="#">Service</a></li>
+     <li class="nav-item text-secondary" style="font-size:20px"><a href="#">Blog</a></li>
+     <li class="nav-item text-secondary" style="font-size:20px"><a href="#">Contact</a></li>
+  </ul>
+</nav>
+</div>
+</div>
+</div>
+     
+     <div class="container-fluid bg-warning mt-3">
+     	<div class="container">
+     		
+     		<div class="row">
+     			<div class="col-lg-7 col-sm-12 mt-5 p-5">
+     				<br>
+     				<br>
+     				<br>
+     				<br>
+     				<br>
+     				<br>
+     				<br>
+
+     				<h2>Awesome Theme</h2>
+     				<div class="para text-white" style="font-size:12px">
+     				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+     			</div>
+     				<button type="button" class="btn btn-dark"> CHECK IT OUT</button>
+     			</div>
+
+                <div class="col-lg-5 col-sm-12 mt-5 p-5">
+                	<br>
+                	<br>
+                	<br>
+                	
+                	<img src="img/mobile.png" width="300px" height="300px">
+                	
+                </div>
+               </div>
+             </div>
+         </div> 
+
+
+
+         <div class="container-fluid bg-dark">
+         	<div class="container">
+         	<div class="row">
+
+
+         		<div class="col-lg-3 col-md-6 col-sm-12 mt-5 text-white">
+         			<br>
+         			<br>
+         			<br>
+         			<br>
+         			<br>
+         			<br>
+         			
+         			<div class="social-links">
+                       <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                       <br>
+                       <h3>Facebook</h3>
+                        </div>
+                  </div>
+                       
+
+
+                  <div class="col-lg-3 col-md-6 col-sm-12 mt-5 text-white">
+         			<br>
+         			<br>
+         			<br>
+         			<br>
+         			<br>
+         			<br>
+         			<div class="social-links">
+                     <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                     <br>
+                     	<h3>Twitter</h3>
+                        </div>
+                        
+                    </div>
+
+
+
+                  <div class="col-lg-3 col-md-6 col-sm-12 mt-5 text-white">
+         		    <br>
+         			<br>
+         			<br>
+         			<br>
+         			<br>
+         			<br>
+         			<div class="social-links">
+                      <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+                      <br>
+                       <h3>Google+</h3>
+                        </div>
+                        
+                    </div>
+
+
+                  <div class="col-lg-3 col-md-6 col-sm-12 mt-5 mb-5 text-white">
+         			<br>
+         			<br>
+         			<br>
+         			<br>
+         			<br>
+         			<br>
+         			<div class="social-links">
+                      <a href="#"><i class="fa fa-pinterest fa-lg"></i></a>
+                      <br>
+                      <h3>Pin interest</h3>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+           
+           <div class="container-fluid bg-dark">
+           	<div class="row">
+           		<div class="col-lg-3 col-md-12 col-sm-12 text-secondary">
+           			<p>Lorem ipsum dolor sit amet, consecte tuer adipiscing elit</p>
+                  </div>
+                   
+
+                   <div class="col-lg-3 col-md-12 col-sm-12 text-secondary">
+           			<p>Lorem ipsum dolor sit amet, consecte tuer adipiscing elit</p>
+                  </div>
+
+                  <div class="col-lg-3 col-md-12 col-sm-12 text-secondary">
+           			<p>Lorem ipsum dolor sit amet, consecte tuer adipiscing elit</p>
+                  </div>
+
+                  <div class="col-lg-3 col-md-12 col-sm-12 text-secondary mb-5">
+           			<p>Lorem ipsum dolor sit amet, consecte tuer adipiscing elit</p>
+           			<br>
+           			<br>
+           			<br>
+           			
+           			
+                  </div>
+              </div>
+          </div>
+
+
+          <div class="container">
+          	<br>
+
+          	<div class="row text-center mt-5">
+
+          		<div class="col-lg-12 col-md-12 col-sm-12 ">
+          			<h2>Some Info About Us</h2>
+          		</div>
+          		<div class="col-lg-12 col-md-12 col-sm-12 text-secondary mb-5">
+          			<h4>Absolutely suited for all your web-based needs</h4>
+          		</div>
+          	</div>
+          </div>
+
+
+
+
+          <div class="container-fluid">
+          	<div class="row">
+          		<div class="col-lg-6 col-md-12 col-sm-12">
+          			<h5>Get To Know What We’re Good At</h5>
+          			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+
+Commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+             </div>
+
+
+         
+         <div class="col-lg-6 col-md-12 col-sm-12 mb-5">
+          <p>Graphic Design</p>
+          <div class="progress">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:63%"> 63%
+         </div>
+      </div>
+
+       <p>Graphic Design</p>
+       <div class="progress">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:38%"> 38%
+         </div>
+      </div>
+      <p>Graphic Design</p>
+       <div class="progress">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:46%"> 46%
+         </div>
+      </div>
+
+      <p>Graphic Design</p>
+         <div class="progress  mb-5">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:77%"> 77%
+
+           </div>
+
+         </div>
+     </div>
+   </div>
+ </div>
+  
+
+
+  <div class="container-fluid bg-danger text-white">
+  	<div class="row">
+  		<div class="col-lg-12 col-md-12 col-sm-12 mt-5 text-center">
+  			<h3>Meet The Team</h3>
+  			<br>
+  			<br>
+  			</div>
+
+  		<div class="col-lg-4 col-md-12 col-sm-12 text-center">
+  			<img src="img/harry.jpg" width="280px" height="250px">
+  			<h5>Harry Potter</h5>
+  			<h6>Founder</h6>
+  			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+  		</div>
+
+  		<div class="col-lg-4 col-md-12 col-sm-12 text-center">
+  			<img src="img/hermoine.jpg" width="280px" height="250px">
+  			<h5>Hermione Granger</h5>
+  			<h6>Marketing</h6>
+  			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+  		</div>
+
+  		<div class="col-lg-4 col-md-12 col-sm-12 text-center mb-5">
+  			<img src="img/ron.jpg" width="280px" height="250px">
+  			<h5>Ron Weasley</h5>
+  			<h6>Designer</h6>
+  			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+  		</div>
+
+  	</div>
+  </div>  
+
+         <div class="container-fluid bg-success text-white text-center">
+         	<div class="container">
+         		<br>
+         		<br>
+         	<div class="row">
+         		<div class="col-lg-3 col-md-12-col-sm-12 ">
+         			<h1 style="font-size:80px">134</h1>
+         			<h4>cups of</h4>
+         			<h4>coffee</h4>
+         		</div>
+
+              <div class="col-lg-3 col-md-12-col-sm-12">
+         			<h1 style="font-size:80px">17</h1>
+         			<h4>Awards</h4>
+         			<h4>Won</h4>
+         		</div>
+
+         		<div class="col-lg-3 col-md-12-col-sm-12">
+         			<h1 style="font-size:80px">85</h1>
+         			<h4>Summer</h4>
+         			<h4>days</h4>
+         		</div>
+
+       
+       <div class="col-lg-3 col-md-12-col-sm-12 mb-5">
+         			<h1 style="font-size:80px">215</h1>
+         			<h4>Happy</h4>
+         			<h4> Clients</h4>
+         		</div>
+         	</div>
+         </div>
+     </div>
+
+
+     <div class="container">
+     	<br>
+     	<br>
+     	<br>
+     	<br>
+     	<br>
+     	<div class="row text-center">
+     		<div class="col-lg-12 col-md-12 col-sm-12">
+     			<h2>Our Latest Work</h2>
+     		</div>
+                 <div class="col-lg-12 col-md-12 col-sm-12 text-secondary mb-5">
+                 <p>Absolutely suited for all your web-based needs</p>
+             </div>
+         </div>
+     </div> 
+
+
+     <div class="container-fluid">
+  	<div class="row">
+  		<div class="col-lg-3 col-sm-6 pl-0 pr-0">
+  			<img src="img/book1.jpg" class="responsive"  width="100%" height="170px">
+  		</div>
+
+  		<div class="col-lg-3 col-sm-6 pl-0 pr-0">
+  			<img src="img/book2.jpg" class="responsive" width="100%" height="170px">
+  		</div>
+
+  		   <div class="col-lg-3 col-sm-6 pl-0 pr-0">
+  			<img src="img/book3.jpg" class="responsive" width="100%" height="170px">
+  		</div>
+
+  		   <div class="col-lg-3 col-sm-6 pl-0 pr-0">
+  			<img src="img/book4.jpg" class="responsive" width="100%" height="170px">
+  		</div>
+  	</div>
+  </div>
+       
+
+        <div class="container-fluid">
+  	<div class="row">
+  		<div class="col-lg-3 col-sm-6 pl-0 pr-0">
+  			<img src="img/book5.jpg" class="responsive" width="100%" height="170px">
+  		</div>
+
+  		<div class="col-lg-3 col-sm-6 pl-0 pr-0">
+  			<img src="img/book6.jpg" class="responsive" width="100%" height="170px">
+  		</div>
+
+  		   <div class="col-lg-3 col-sm-6 pl-0 pr-0">
+  			<img src="img/book7.jpg" class="responsive" width="100%" height="170px">
+  		</div>
+
+  		   <div class="col-lg-3 col-sm-6 pl-0 pr-0">
+  			<img src="img/book8.jpg" class="responsive" width="100%" height="170px">
+  			<br>
+  			<br>
+  			<br>
+  			<br>
+  		</div>
+  	</div>
+  </div> 
+
+
+
+     <div class="container">
+     	<div class="row">
+     		<div class="col-lg-9 col-md-12 col-sm-12">
+     			<h4>Absolutely Suited For Every And Any Of Your Web-Based Needs.</h4>
+     		</div>
+
+     		<div class="col-lg-3 col-md-12-col-sm-12 mb-5">
+     			<button type="button" class="btn btn-dark"> CHECK IT OUT</button>
+     		</div>
+     	</div>
+     </div>
+
+
+         <div class="container-fluid bg-light">
+         	<div class="row">
+         		<div class="container">
+         		
+         			<div class="col-lg-12 col-d-12 col-sm-12 text-center">
+         				<br>
+         				<br>
+         				<br>
+         				<br>
+         				<br>
+         		<h1>What They Said</h1>
+         
+         </div>
+     </div>
+
+         	<div class="container-fluid">
+         		<div class="row">
+         			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+  </ol>
+         			<div class="col-lg-12 col-d-12 col-sm-12 text-center">
+         				<br>
+         				<br>
+         				<br>
+         			 <p>To love means loving the unlovable. To forgive means pardoning the unpardonable. Faith means believing the unbelievable. Hope means hoping when everything seems hopeless.</p>
+         			 
+         			 <h4>Gilbert K. Chesterton</h4>
+         			</div>
+         		</div>
+         	</div>
+
+
+             
+         	     <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+</div>
+</div>
+
+
+    <div class="container">
+    	<div class="row">
+    		<div class="col-lg-3 col-md-6 col-sm-12">
+    			<img src="img/style font1.png" width="100%" height="150px">
+    		</div>
+
+    		<div class="col-lg-3 col-md-6 col-sm-12">
+    			<img src="img/style font2.png" width="100%" height="150px">
+    		</div>
+
+    		<div class="col-lg-3 col-md-6 col-sm-12">
+    			<img src="img/style font3.png" width="100%" height="150px">
+    		</div>
+
+    		<div class="col-lg-3 col-md-6 col-sm-12">
+    			<img src="img/style font4.png" width="100%" height="150px">
+    		</div>
+
+       </div>
+   </div>
+    
+    <div class="container-fluid mb-5">
+    	<div class="row">
+    		<div class="col-lg-4 col-md-12 col-sm-12">
+    			 <div class="card" style="width:400px">
+              <img class="card-img-top" src="img/blog2.jpg" alt="Card image" style="width:100%">
+         <div class="card-body">
+            <h4 class="card-title">Transistion In Ux Design</h4>
+            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+           <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+</div>
+
+          <div class="col-lg-4 col-md-12 col-sm-12">
+    			 <div class="card" style="width:400px">
+              <img class="card-img-top" src="img/blog2.jpg" alt="Card image" style="width:100%">
+         <div class="card-body">
+            <h4 class="card-title">Transistion In Ux Design</h4>
+            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+           <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+</div>
+
+        <div class="col-lg-4 col-md-12 col-sm-12">
+    			 <div class="card" style="width:400px">
+              <img class="card-img-top" src="img/blog2.jpg" alt="Card image" style="width:100%">
+         <div class="card-body">
+            <h4 class="card-title">Transistion In Ux Design</h4>
+            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+           <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+ <div class="container-fluid ">
+ 	<br>
+ 	<br>
+    	<div class="row">
+    		<div class="col-lg-4 col-md-12 col-sm-12">
+    			 <div class="card" style="width:400px">
+              <img class="card-img-top" src="img/blog4.jpg" alt="Card image" style="width:100%">
+         <div class="card-body">
+            <h4 class="card-title">Transistion In Ux Design</h4>
+            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+           <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+</div>
+
+          <div class="col-lg-4 col-md-12 col-sm-12">
+    			 <div class="card" style="width:400px">
+              <img class="card-img-top" src="img/blog4.jpg" alt="Card image" style="width:100%">
+         <div class="card-body">
+            <h4 class="card-title">Transistion In Ux Design</h4>
+            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+           <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+</div>
+
+        <div class="col-lg-4 col-md-12 col-sm-12 mb-5">
+    			 <div class="card" style="width:400px">
+              <img class="card-img-top" src="img/blog4.jpg" alt="Card image" style="width:100%">
+         <div class="card-body">
+            <h4 class="card-title">Transistion In Ux Design</h4>
+            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+           <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+   <div class="container-fluid bg-light">
+        <div class="container">
+        	<br>
+        	<br>
+        	<br>
+        	<br>
+        	<br>
+        	<br>
+        	<div class="row">
+        		<div class="col-lg-12 col-md-12 col-sm-12 text-center">
+
+        		<h2>Contact Us</h2>
+        	</div>
+        </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+          <div class="row">
+          <div class="col-lg-3 col-md-6-col-sm-12">
+          <img src="img/icon0.png" width="80px" height="80px">
+          <br>
+           <br>
+          <h4>Address</h4>
+           <p>198 West 21th Street New York</p>
+      </div>
+
+
+      <div class="col-lg-3 col-md-6-col-sm-12">
+          <img src="img/icon1.png" width="80px" height="80px">
+          <br>
+           <br>
+          <h4>phone</h4>
+           <p>+88 (0) 101 0000 000</p>
+      </div>
+
+
+      <div class="col-lg-3 col-md-6-col-sm-12">
+          <img src="img/icon2.png" width="80px" height="80px">
+          <br>
+           <br>
+          <h4>Fax</h4>
+          <p>+88 (0) 101 0000 000</p>
+      </div>
+
+      <div class="col-lg-3 col-md-6-col-sm-12">
+          <img src="img/icon0.png" width="80px" height="80px">
+          <br>
+           <br>
+          <h4>E-mail</h4>
+           <p>email@yourdomain.com</p>
+           <br>
+           <br>
+           <br>
+           <br>
+      </div>
+  </div>
+</div>      
+  </div>
+
+
+
+
+       <div class="container-fluid">
+       	<div class="row">
+       		
+       		<div class="col-lg-6 col-md-12 col-sm-12 mt-5">
+       			<br>
+       			<br>
+       			<br>
+       			<h4> Say Hello</h4>
+       			<br>
+       			
+       			
+       	     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam</p>
+
+       	      <p>erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla.</p>
+       	  </div>
+
+
+       	  <div class="col-lg-6 col-md-12 col-sm-12 mt-5 mb-5">
+            <br>
+            <br>
+            <br>
+            <br>
+       	  	<div class="form-group">
+      <input type="text" class="form-control form-control-sm" placeholder="Name" id="text1">
+    </div>
+           <div class="form-group bg-light">
+      <input type="text" class="form-control form-control-sm" placeholder="E-mail" id="text1">
+    </div>
+
+         <div class="form-group bg-light">
+      <input type="text" class="form-control form-control-sm" placeholder="Subject" id="text1">
+    </div>
+
+    <div class="form-group">
+      
+      <textarea class="form-control" rows="5" placeholder="Message" id="comment" name="text"></textarea>
+    </div>
+    <br>
+
+    <button id=btn type="button" class="btn btn-info">SEND</button>
+
+
+
+</div>
+</div>
+</div>
+
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 text-center bg-dark">
+
+         <button type="button" data-toggle="collapse" data-target="#map" class="collapsed" aria-expanded="false">Show Map
+          <br><i class="fa fa-angle-down fa-1x"></i></button>
+
+          <div id="map" class="collapse" aria-expanded="false" style="height:20px;">
+                <img src="img/blog2.jpg">
+            </div>
+
+      </div>
+  </div>
+</div>
+       <div class="container-fluid bg-info">
+       	<div class="row">
+       		<div class="col-lg-12 col-md-12 col-sm-12 text-center">
+       			<br>
+       			<br>
+       			<br>
+       			<br>
+       			<br>
+       			<br>
+       			<br>
+       			<img src="img/btm.png" width="100px" height="150px">
+       		</div>
+       		<br>
+       		<br>
+       		<br>
+       		<div class="col-lg-12 col-md-12 col-sm-12 text-center mb-5">
+       			<br>
+       			<br>
+                 <p>© Copyright Qode Interactive 2014</p>
+             </div>
+         </div>
+         
+
+
+
+
+        
+
+   
+
+
+
+
+
+    
+
+</body>
+</html>
+
